@@ -1,0 +1,14 @@
+{
+  "name": "zooming",
+  "homepage": "https://github.com/kingdido999/zooming",
+  "version": "1.5.0",
+  "_release": "1.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.5.0",
+    "commit": "4d76efd0d3a477fc2d8c2803c3a44c1d6968ec75"
+  },
+  "_source": "https://github.com/kingdido999/zooming.git",
+  "_target": "^1.2.6",
+  "_originalSource": "zooming"
+}

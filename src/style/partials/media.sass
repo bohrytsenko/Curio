@@ -1,0 +1,246 @@
+$r-768: 768px
+
+body
+  // break max-768
+  @media only screen and (max-width: $r-768)
+    .container
+      padding: 0 40px
+  // break max-768
+  @media only screen and (max-width: $r-768 - 1)
+    .show_mobile
+      display: block
+    .show_flex
+      display: flex
+    .show_desctop
+      display: none
+    .header_top
+      padding: 12px 0
+      &__logo img
+        width: 53px
+    .home_start
+      background-image: url("../img/bg_home_m.jpg") !important
+      min-height: 570px
+      padding: 50px 0
+      background-position: bottom
+      &__title
+        .title
+          font-size: 25px
+      &__text
+        margin-bottom: 25px
+        p
+          font-size: 14px
+    .home_phrase
+      padding: 46px 0
+      &__icon
+        margin-bottom: 13px
+      &__text
+        width: 260px
+        p
+          font-size: 18px
+      &__info
+        p
+          font-size: 12px
+    .home_p_wrap
+      flex-direction: column
+    .home_p_item
+      min-height: 0
+      padding: 45px 40px
+      width: 100%
+      &:nth-child(3)
+        order: 4
+      p
+        width: 240px
+        margin: 0 auto 15px auto
+    .home_p_pesron
+      img
+        width: 20%
+    .home_time
+      min-height: 295px
+      padding: 45px 0
+      background-attachment: inherit
+      &__title
+        width: 200px
+        max-width: 100%
+        .title
+          font-size: 20px
+    .home_about
+      padding: 45px 0
+      &__wrapper
+        flex-direction: column
+    .home_a_wrap__item
+      width: 240px!important
+      .title
+        font-size: 20px
+        text-align: center
+      img
+        margin-bottom: 50px
+    .home_a_list
+      margin-bottom: 45px
+      li
+        flex-direction: column
+        text-align: center
+        margin-bottom: 26px
+        img
+          width: 60px
+          margin: 0 0 11px 0
+    .home_a_item__link img
+      margin: 0
+
+    .footer
+      padding: 63px 0 23px
+      &__wrapper
+        flex-direction: column
+    .footer_item
+      &:first-child
+        margin-bottom: 57px
+      &:nth-child(2)
+        margin-bottom: 36px
+      &:last-child
+        margin-bottom: 20px
+        display: flex
+        width: 240px
+        max-width: 100%
+        justify-content: space-between
+      &__title
+        margin-bottom: 28px
+        .title
+          font-size: 25px
+      ul
+        li
+          margin-bottom: 15px
+          a
+            font-size: 18px
+    .footer_item__form
+      margin-bottom: 30px
+      form
+        flex-direction: column
+        align-items: flex-start
+        input[type="email"]
+          font-size: 18px
+          width: 240px
+          height: 38px
+          border-radius: 8px
+          margin-bottom: 28px
+          &::placeholder
+            font-size: 18px
+        input[type="submit"]
+          font-size: 18px
+          width: 96px
+          height: 38px
+          border-radius: 8px
+    .footer_item ul li a
+      width: 36px
+      height: 36px
+      i
+        font-size: 24px
+    .about_info
+      padding: 35px 0 15px 0
+      &__title
+        padding: 0 20px
+        .title
+          font-size: 25px
+      &__wrapper
+        flex-direction: column
+    .about_i_item
+      &:first-child
+        margin-bottom: 33px
+      &:nth-child(2)
+        padding: 0 20px
+    .about_advisors
+      padding: 15px 20px
+      &__title
+        .title
+          font-size: 25px
+    .advisors_item
+      margin-bottom: 34px
+      &:last-child
+        margin-bottom: 0
+      &__img
+        width: 122px
+    .about_narrators
+      padding: 15px 20px
+      &__title
+        .title
+          font-size: 25px
+    .narrators_item
+      width: 46%
+
+    .last_post
+      padding: 20px 0
+    .last_post_item
+      &__image
+        margin-bottom: 22px
+      &__title .title a
+        font-size: 25px
+    .swiper-posts
+      padding: 0 0 50px 0
+    .posts_item__title
+      padding: 0 5px
+      min-height: 65px
+      .title a
+        font-size: 12px
+        line-height: 14px
+    .posts_item__author,
+    .posts_item__date
+      font-size: 10px
+      padding: 0 5px
+    .single_post__link a
+      font-size: 12px
+    .single_item
+      &__info
+        padding: 0 8px
+      &__image
+        margin-bottom: 22px
+      &__title
+        .title
+          font-size: 25px
+    .more_posts__title
+      padding: 0 8px
+      .title
+        font-size: 25px
+    .more_item
+      width: 46%
+
+    .subscription_plan
+      padding: 35px 0
+      background-image: none!important
+      background-color: #fff
+      &__title
+        margin-bottom: 20px
+        .title
+          font-size: 25px
+    .subscription_item
+      padding-bottom: 40px
+      margin-bottom: 50px
+    .premium_wrap
+      flex-direction: column
+      &__item
+        margin-bottom: 25px
+    .try_free
+      &_wrap
+        flex-direction: column
+      &__text
+        text-align: center
+        margin-bottom: 30px
+        p
+          margin-right: 0
+    .subscription_checkout
+      padding: 35px 0
+      &__wrapper
+        flex-direction: column
+      &__title
+        margin-bottom: 20px
+        .title
+          font-size: 25px
+    .subscription_start,
+    .subscription_password,
+    .subscription_customise
+      padding: 35px 0
+      &__title
+        margin-bottom: 20px
+        .title
+          font-size: 25px
+    .customise_item
+      width: 46%
+      text-align: center
+

@@ -1,0 +1,303 @@
+// Home start
+
+.home_start
+  padding: 107px 0
+  background-position: right
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: #f4524b
+  &__title
+    width: 350px
+    max-width: 100%
+    margin-bottom: 14px
+    .title
+      color: $color_white
+      font-size: 35px
+      font-weight: 300
+      text-transform: uppercase
+      letter-spacing: 0.38px
+  &__text
+    margin-bottom: 40px
+    width: 350px
+    max-width: 100%
+    p
+      color: $color_white
+      font-size: 16px
+      font-weight: 400
+      line-height: 20px
+      letter-spacing: 0.39px
+  &__form
+    margin-bottom: 9px
+    .invalid,
+    .sent
+      margin-bottom: 50px
+    form
+      display: flex
+      align-items: center
+      .wpcf7-not-valid-tip
+        color: $color_white
+        font-size: 12px
+        position: absolute
+        width: 100%
+        display: block
+      .wpcf7-validation-errors
+        position: absolute
+        margin: 0
+        top: 50px
+        border: 1px solid $color_white
+        color: $color_white
+        font-size: 12px
+      .wpcf7-mail-sent-ok
+        position: absolute
+        margin: 0
+        top: 50px
+        border: 1px solid $color_white
+        color: $color_white
+        font-size: 12px
+      input
+        border: 0
+        outline: 0
+      input[type="email"]
+        padding-left: 13px
+        width: 175px
+        height: 34px
+        line-height: 1
+        border-radius: 8px 0 0 8px
+        background-color: rgba(0, 0, 0, 0)
+        border: 1px solid #f7f7f7
+        color: $color_white
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.42px
+        &::placeholder
+          color: $color_white
+          font-size: 14px
+          line-height: 1
+          font-weight: 300
+          letter-spacing: 0.42px
+      input[type="submit"]
+        width: 111px
+        height: 34px
+        line-height: 1
+        border-radius: 0 8px 8px 0
+        color: #e24747
+        font-size: 14px
+        font-weight: 300
+        cursor: pointer
+        position: relative
+        left: -3px
+        transition: $transition
+        &:hover
+          transition: $transition
+          color: $color_black
+  &__info
+    p
+      color: $color_white
+      font-size: 12px
+      font-weight: 300
+      line-height: 26px
+      letter-spacing: 0.29px
+  &__link
+    width: 240px
+    max-width: 100%
+    justify-content: space-between
+
+
+// Home phrase
+
+.home_phrase
+  padding: 58px 0
+  text-align: center
+  &__icon
+    margin-bottom: 25px
+  &__text
+    width: 670px
+    max-width: 100%
+    margin: 0 auto 25px auto
+    p
+      color: #444752
+      font-size: 30px
+      font-weight: 300
+      letter-spacing: 0.44px
+  &__info
+    p
+      color: #444752
+      font-size: 14px
+      font-weight: 300
+      letter-spacing: 0.44px
+
+// Home publications
+
+.home_publications
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.home_p_item
+  min-height: 230px
+  padding: 0 45px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 50%
+  &:first-child
+    background-color: #4b4e58
+    min-height: 260px
+  &:nth-of-type(2)
+    min-height: 260px
+  &:nth-of-type(2),
+  &:nth-of-type(3)
+    background-color: $color_white
+  &:nth-of-type(3)
+    .home_p_bl
+      display: flex
+      justify-content: flex-end
+  &:nth-of-type(4)
+    padding: 0
+  &:nth-of-type(odd)
+    justify-content: flex-end
+  &:nth-of-type(even)
+    justify-content: flex-start
+  &__link
+    text-align: center
+    a
+      color: $color_white
+      font-family: "Lato Light"
+      font-size: 14px
+      font-weight: 300
+      line-height: 21px
+      letter-spacing: 0.44px
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 1px
+        background-color: $color_white
+        bottom: -2px
+
+.home_p_bl
+  width: 385px
+  max-width: 100%
+  p
+    width: 295px
+    max-width: 100%
+    color: #444752
+    font-size: 14px
+    line-height: 20px
+    font-weight: 300
+    letter-spacing: 0.44px
+    margin-bottom: 15px
+    b,
+    strong
+      font-weight: 400
+      letter-spacing: 0.44px
+
+.home_p_logo
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  &__item
+    margin-bottom: 20px
+    width: 30%
+    text-align: center
+
+.home_p_pesron
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-items: center
+
+// Home time
+
+.home_time
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-position: center top
+  background-size: cover
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 0
+  width: 100%
+  padding: 164px 0 270px 0
+  &__title
+    margin-bottom: 29px
+    .title
+      color: #444752
+      font-size: 30px
+      font-weight: 300
+      letter-spacing: 0.44px
+  &__btn
+    margin-bottom: 10px
+  &__text
+    p
+      color: #4b4e58
+      font-size: 12px
+      font-weight: 300
+      line-height: 26px
+      letter-spacing: 0.34px
+  &__link
+    flex-direction: column
+    a
+      margin-bottom: 10px
+
+// Home about
+
+.home_about
+  padding: 102px 0 107px 0
+  background-color: $color_white
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__btn
+    a
+      margin: 0 auto 10px auto
+  &__text
+    text-align: center
+    p
+      color: #4b4e58
+      font-size: 12px
+      font-weight: 300
+      line-height: 26px
+      letter-spacing: 0.34px
+
+.home_a_wrap
+  margin-bottom: 26px
+  &__item
+    &:first-child
+      width: 311px
+      max-width: 100%
+    &:nth-child(2)
+      width: 365px
+      max-width: 100%
+
+.home_a_item
+  &__title
+    margin-bottom: 24px
+    .title
+      color: #e24747
+      font-size: 30px
+      font-weight: 300
+      letter-spacing: 0.44px
+  &__list
+    ul
+      padding: 0
+      margin: 0
+      li
+        color: #444752
+        font-size: 14px
+        font-weight: 300
+        line-height: 23px
+        letter-spacing: 0.44px
+        margin-bottom: 20px
+        display: flex
+        align-items: center
+        img
+          margin-right: 10px
+  &__link
+    justify-content: space-between
+    img
+      margin: 0
