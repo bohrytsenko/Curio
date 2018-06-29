@@ -96,3 +96,50 @@ img
       background-color: $color_black!important
       color: $color_white
       border-radius: 50%!important
+
+.error
+  &_white
+    display: none
+    margin: 0 0 20px 0
+    p
+      padding-left: 10px
+      display: flex
+      align-items: center
+      position: relative
+      color: $color_white
+      font-size: 14px
+      font-weight: 300
+      line-height: 18px
+      margin-bottom: 2px
+      &:before
+        position: absolute
+        content: ''
+        left: 0
+        width: 6px
+        height: 6px
+        background-color: $color_white
+        border-radius: 50%
+  &_red
+    display: none
+    margin: 0 0 20px 0
+    p
+      padding-left: 10px
+      display: flex
+      align-items: center
+      position: relative
+      color: $color_red
+      font-size: 14px
+      font-weight: 300
+      line-height: 18px
+      margin-bottom: 2px
+      &:before
+        position: absolute
+        content: ''
+        left: 0
+        width: 6px
+        height: 6px
+        background-color: $color_red
+        border-radius: 50%
+
+.invalid
+  display: block
